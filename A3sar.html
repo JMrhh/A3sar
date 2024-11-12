@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #00f;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1; /* Ensure the container is above the video */
+        }
+
+        .image-container img {
+            width: 400px;
+            border: 2px solid #00f;
+            border-radius: 10px;
+        }
+
+        .info {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .link {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: #00f;
+            text-decoration: none;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the video stays in the background */
+            object-fit: cover;
+        }
+
+        /* Added code effect styling */
+        .info p {
+            margin: 0;
+            white-space: pre-wrap;
+        }
+
+        .code-effect {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Ensure media container stays separate from background */
+        .media-container {
+            margin-top: 17px;
+        }
+
+        /* Optional styling for ip-info */
+        pre {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background video element -->
+    <video class="background" autoplay muted loop>
+        <source src="https://cdn.discordapp.com/attachments/1261114958574387241/1305968565421080677/videoplayback_2.mp4?ex=6734f581&is=6733a401&hm=0528248da7f722057ef46717cc8bf67ff791c567417e6b73c22c518906be4d5b&" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+   
+
+        <div class="media-container">
+            <!-- Background audio element -->
+            <audio autoplay loop>
+                <source src="https://cdn.discordapp.com/attachments/1261114958574387241/1305967810136117270/9020d81fb0b87b73.mp3?ex=6734f4cd&is=6733a34d&hm=e81c92443d4da2f0f5124d8af6943a851576993a9bd479403106832a8d18bffa&" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نص متحرك من اليمين إلى اليسار</title>
+    <style>
+        .moving-text {
+            position: absolute;
+            top: 50px; /* تعديل الموضع العمودي حسب الحاجة */
+            width: 100%;
+            text-align: center;
+            font-size: 32px; /* حجم الخط أكبر */
+            font-weight: bold;
+            color: white; /* لون النص أبيض */
+            animation: moveRightToLeft 10s infinite linear;
+            white-space: nowrap; /* لمنع التفاف النص */
+        }
+
+        @keyframes moveRightToLeft {
+            0% {
+                left: 100%; /* البداية من خارج الشاشة على اليمين */
+            }
+            100% {
+                left: -100%; /* النهاية خارج الشاشة على اليسار */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-text">اعصار قادممممم</div>
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
